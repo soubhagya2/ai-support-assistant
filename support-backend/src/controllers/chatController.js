@@ -53,11 +53,11 @@ export const sendMessage = asyncHandler(async (req, res) => {
     [sessionId, "user", message.trim()],
   );
 
-  // 3. Fetch last 3 message pairs (up to 6 messages) for context - reduced from 10
+  // 3. Fetch last 5 message pairs (up to 10 messages) for context
   const contextMessages = await db.all(
     `SELECT role, content FROM messages 
      WHERE session_id = ? 
-     ORDER BY created_at DESC LIMIT 6`,
+     ORDER BY created_at DESC LIMIT 10`,
     [sessionId],
   );
 

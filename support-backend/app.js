@@ -7,13 +7,35 @@ import sessionRoutes from "./src/routes/sessionRoutes.js";
 
 const app = express();
 
+// Configure CORS with allowed origins
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(",")
+  : [
+      "http://localhost:3000",
+      "http://localhost:5173",
+      "https://ai-support-assistant-3vq6.onrender.com",
+      "https://ai-support-assistant-l9twunets-soubhagya2s-projects.vercel.app",
+    ];
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(rateLimiter);
 
 // Routes
 app.use("/api/chat", chatRoutes);
+app.use("/api/conversations", chatRoutes); // Alias for /api/chat routes
 app.use("/api/sessions", sessionRoutes);
 
 // Health check
