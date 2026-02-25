@@ -1,0 +1,52 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env*
+
+# Dependencies
+**/node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+.cache/
+out/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+database.sqlite
+
+# Logs
+logs/
+*.log
+lerna-debug.log*
+
+# Temp files
+.temp/
+tmp/
+temp/

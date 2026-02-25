@@ -1,0 +1,127 @@
+/* Chat Input Component Styles */
+
+.chat-input {
+  background: white;
+  border-top: 1px solid #e0e0e0;
+  padding: 1.2rem;
+  flex-shrink: 0;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 0.8rem;
+  max-width: 100%;
+}
+
+.input-field {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: none;
+  max-height: 120px;
+  min-height: 44px;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.input-field:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.send-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.send-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.send-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.send-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.input-hint {
+  margin: 0.8rem 0 0 0;
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chat-input {
+    padding: 1rem;
+  }
+
+  .input-wrapper {
+    gap: 0.6rem;
+  }
+
+  .input-field {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.9rem;
+    min-height: 40px;
+  }
+
+  .send-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+    min-width: 80px;
+  }
+
+  .input-hint {
+    margin-top: 0.6rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-input {
+    padding: 0.8rem;
+  }
+
+  .input-wrapper {
+    gap: 0.5rem;
+  }
+
+  .input-field {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+    min-height: 36px;
+  }
+
+  .send-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    min-width: 70px;
+  }
+
+  .input-hint {
+    font-size: 0.7rem;
+  }
+}

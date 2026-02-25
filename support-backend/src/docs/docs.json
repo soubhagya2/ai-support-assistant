@@ -1,0 +1,77 @@
+[
+  {
+    "id": "doc_1",
+    "title": "Account Registration",
+    "content": "To create an account, visit the registration page and fill in your email address, create a strong password (at least 8 characters with uppercase, lowercase, and numbers), and agree to the terms of service. You'll receive a confirmation email to verify your account."
+  },
+  {
+    "id": "doc_2",
+    "title": "Reset Password",
+    "content": "If you've forgotten your password, click the 'Forgot Password' link on the login page. Enter your email address and you'll receive a password reset link. Click the link in the email and create a new password."
+  },
+  {
+    "id": "doc_3",
+    "title": "Two-Factor Authentication",
+    "content": "Two-factor authentication (2FA) adds an extra layer of security to your account. Go to Settings > Security > Enable 2FA. You can use an authenticator app like Google Authenticator or Authy. Follow the setup instructions to scan the QR code."
+  },
+  {
+    "id": "doc_4",
+    "title": "Update Profile Information",
+    "content": "To update your profile, go to Settings > Profile. You can change your name, email address, profile picture, and bio. Click Save to apply changes. Changing your email will require verification."
+  },
+  {
+    "id": "doc_5",
+    "title": "Billing and Subscription",
+    "content": "You can manage your subscription in Settings > Billing. Choose from our plans: Free (limited features), Pro ($9.99/month), and Enterprise (custom pricing). Upgrades take effect immediately. You can cancel anytime with no penalties."
+  },
+  {
+    "id": "doc_6",
+    "title": "Refund Policy",
+    "content": "We offer a 30-day money-back guarantee for all paid plans. If you're not satisfied, contact our support team within 30 days of purchase for a full refund. Monthly subscriptions can be canceled anytime before the next billing cycle."
+  },
+  {
+    "id": "doc_7",
+    "title": "Payment Methods",
+    "content": "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for Enterprise plans. All payments are processed securely using industry-standard encryption."
+  },
+  {
+    "id": "doc_8",
+    "title": "API Documentation",
+    "content": "Our REST API allows developers to integrate our services. Documentation is available at api.example.com/docs. You'll need an API key from Settings > Developer > API Keys. Rate limit: 1000 requests per hour."
+  },
+  {
+    "id": "doc_9",
+    "title": "Getting Started Guide",
+    "content": "Welcome to our platform! Start by creating an account, setting up your profile, and completing the onboarding tutorial. Join our community Discord at discord.gg/example for tips and support."
+  },
+  {
+    "id": "doc_10",
+    "title": "Data Privacy and Security",
+    "content": "Your data is encrypted in transit (HTTPS) and at rest. We comply with GDPR, CCPA, and other privacy regulations. You can download your data or request deletion in Settings > Privacy. We never sell your personal information."
+  },
+  {
+    "id": "doc_11",
+    "title": "Contact Support",
+    "content": "For issues not covered in our documentation, contact our support team: Email: support@example.com, Phone: 1-800-SUPPORT (1-800-787-7768), Hours: Monday-Friday, 9 AM-6 PM EST. Premium members get priority support."
+  },
+  {
+    "id": "doc_12",
+    "title": "System Requirements",
+    "content": "Our web platform works on all modern browsers (Chrome, Firefox, Safari, Edge). Mobile apps are available for iOS 12+ and Android 8+. Minimum 512MB RAM and stable internet connection recommended."
+  },
+  {
+    "id": "doc_13",
+    "title": "Export and Import Data",
+    "content": "You can export your data in CSV or JSON format from Settings > Data > Export. To import data, go to Settings > Data > Import and select your file. Supported formats: CSV, JSON, and XML."
+  },
+  {
+    "id": "doc_14",
+    "title": "Team Collaboration",
+    "content": "Invite team members by going to Settings > Team > Add Members. Enter their email and select their role (Admin, Editor, Viewer). Share projects and collaborate in real-time. Team plans start at $29.99/month."
+  },
+  {
+    "id": "doc_15",
+    "title": "Backup and Recovery",
+    "content": "Your data is automatically backed up daily. You can restore previous versions of your projects from the version history. In case of account issues, contact support with proof of ownership for data recovery assistance."
+  }
+]
