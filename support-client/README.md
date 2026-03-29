@@ -1,16 +1,65 @@
-# React + Vite
+# 🍐 Pear Media AI Lab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A creative AI-powered media tool built with React + Vite, using free AI APIs for text enhancement and image generation.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** [yourusername.github.io/your-repo-name](https://yourusername.github.io/your-repo-name)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Text Workflow** — Enhance prompts with Gemini AI, then generate images
+- **Image Workflow** — Upload an image, analyze it, and generate variations
+- **100% Free APIs** — Gemini 1.5 Flash + Pollinations.ai
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- React 18 + Vite
+- Tailwind CSS
+- Lucide Icons
+- Gemini API (text)
+- Pollinations.ai (image generation)
+
+---
+
+## 🚀 Run Locally
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+
+# Install dependencies
+npm install
+
+# Add your API key
+echo "VITE_API_KEY=your_gemini_key_here" > .env
+
+# Start dev server
+npm run dev
+```
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in the root:
+```env
+VITE_API_KEY=your_gemini_api_key
+```
+
+Get a free key at [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
+
+---
+
+## 📦 Deploy
+```bash
+npm run deploy
+```
+
+---
+
+## 📄 License
+
+MIT © 2024 Pear Media
